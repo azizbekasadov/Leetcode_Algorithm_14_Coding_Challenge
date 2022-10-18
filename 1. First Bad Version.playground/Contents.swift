@@ -10,3 +10,22 @@
 // Implement a function to find the first bad version. You should minimize the number of
 // calls to the API.
 
+/**
+ * The knows API is defined in the parent class VersionControl.
+ *     func isBadVersion(_ version: Int) -> Bool{}
+ */
+
+class Solution: VersionControl {
+    func firstBadVersion(_ n: Int) -> Int {
+        if isBadVersion(1) {
+            return 1
+        } else {
+            for each in 2...n {
+                if isBadVersion(each) {
+                    return each
+                }
+            }
+            return -1
+        }
+    }
+}
