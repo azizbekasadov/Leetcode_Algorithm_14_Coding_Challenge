@@ -15,17 +15,21 @@
  *     func isBadVersion(_ version: Int) -> Bool{}
  */
 
-class Solution: VersionControl {
-    func firstBadVersion(_ n: Int) -> Int {
-        if isBadVersion(1) {
-            return 1
-        } else {
-            for each in 2...n {
-                if isBadVersion(each) {
-                    return each
-                }
-            }
-            return -1
-        }
-    }
-}
+//class Solution: VersionControl {
+//    func firstBadVersion(_ n: Int) -> Int {
+//        if isBadVersion(1) {
+//            return 1
+//        } else {
+//            for each in 2...n {
+//                if isBadVersion(each) {
+//                    return each
+//                }
+//            }
+//            return -1
+//        }
+//    }
+//}
+
+var value: Int8 = 120
+value = value &+ 100
+print(value)
